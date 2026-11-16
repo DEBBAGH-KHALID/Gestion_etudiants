@@ -1,0 +1,10 @@
+1;benali;sara;GI;14.5;
+2;alaoui;youssef;IDIA;12;
+3;idrissi;khadija;GE;16.25;
+4;tazi;SARA;GC;20;
+5;chraibi;imane;GI;17;
+6;bennani;mehdi;IDIA;9.75;
+7;fassi;salma;GE;13;
+8;amrani;hamza;GC;11.5;
+9;DEBBAGH;KHALID;IDIA;18;etu_6afb2abd3ae74.png
+10;DEBBAGH;KHALID;IDIA;17;

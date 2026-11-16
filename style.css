@@ -1,0 +1,50 @@
+:root {
+    --principale: #0f766e;        /* en-tête, boutons */
+    --principale-fonce: #0b5a54;  /* survol des boutons */
+    --fond: #f0f7f6;              /* fond de la page */
+    --carte: #ffffff;
+    --texte: #1f2937;
+    --texte-leger: #6b7280;
+    --bordure: #cbd5d3;
+    --entete-tableau: #d9efec;
+    --survol-ligne: #f1faf9;
+    --succes-fond: #d9f2de;  --succes-texte: #1e6b32;
+    --erreur-fond: #fbdcdc;  --erreur-texte: #a12626;
+    --note-ok: #15803d;
+    --note-ko: #dc2626;
+}
+
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 0; background: var(--fond); color: var(--texte); }
+header { background: var(--principale); color: #fff; padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; }
+header h1 { margin: 0; font-size: 20px; }
+nav a { color: #fff; margin-left: 16px; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+main { max-width: 900px; margin: 24px auto; padding: 0 16px; }
+footer { text-align: center; color: var(--texte-leger); padding: 20px; font-size: 13px; }
+
+.carte { background: var(--carte); padding: 20px; border-radius: 8px; max-width: 420px; box-shadow: 0 2px 6px rgba(0,0,0,.1); }
+.carte label { display: block; margin: 12px 0 4px; font-weight: bold; }
+input[type=text], input[type=password], select { width: 100%; padding: 8px; border: 1px solid var(--bordure); border-radius: 4px; }
+input:focus, select:focus { outline: 2px solid var(--principale); border-color: var(--principale); }
+button { margin-top: 16px; padding: 8px 16px; background: var(--principale); color: #fff; border: 0; border-radius: 4px; cursor: pointer; }
+button:hover { background: var(--principale-fonce); }
+
+.recherche { display: flex; gap: 8px; margin-bottom: 12px; }
+.recherche input { flex: 1; }
+.recherche select { width: auto; }
+.recherche button { margin: 0; }
+.stats { background: var(--carte); padding: 10px 14px; border-radius: 6px; }
+
+table { width: 100%; border-collapse: collapse; background: var(--carte); }
+th, td { padding: 10px; border-bottom: 1px solid #e3e3e3; text-align: left; }
+th { background: var(--entete-tableau); }
+tr:hover td { background: var(--survol-ligne); }
+td a { color: var(--principale); }
+
+.message { padding: 10px 14px; border-radius: 6px; }
+.succes { background: var(--succes-fond); color: var(--succes-texte); }
+.erreur { background: var(--erreur-fond); color: var(--erreur-texte); }
+.vert { color: var(--note-ok); font-weight: bold; }
+.rouge { color: var(--note-ko); font-weight: bold; }
+.photo { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
